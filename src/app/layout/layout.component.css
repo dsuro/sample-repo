@@ -1,0 +1,14 @@
+.tab-content
+{
+    border-bottom:1px solid #8fdeff;
+	border-left:1px solid #8fdeff;
+    border-right:1px solid #8fdeff;
+    min-height: 100vh;
+    height: auto;
+    margin-bottom: 5px;
+}
+.btn-edit
+{
+    background: #38BDFF!important;
+    color: white;
+}

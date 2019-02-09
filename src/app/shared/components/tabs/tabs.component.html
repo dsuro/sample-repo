@@ -1,0 +1,14 @@
+<div class="tabContainer">
+    <ul class="nav nav-tabs">
+      <li class="nav-item" 
+      *ngFor="let tabObj of tabs"
+      (click)="onTabChange(tabObj)">
+      <i *ngIf="tabObj.isExternalApp" (click)="onTabClose(tabObj)"
+            class="fa fa-times close-icon" 
+            aria-hidden="true"></i>
+        <a  class="nav-link" [ngClass]="{'active':tabObj.isSelected,'inActive':!tabObj.isSelected}">
+            <span>{{tabObj.displayName}}</span>
+          </a>
+      </li>
+    </ul>
+  </div>

@@ -1,0 +1,14 @@
+<div *ngIf="showDropdown">
+    <p-multiSelect
+      [options]="dropdownData"
+      [maxSelectedLabels]="maxLabels"
+      [(ngModel)]="selectedItems"
+      [disabled]="isDisabled"
+      [resetFilterOnHide]="true"
+      [defaultLabel]="placeholderText"
+      (onChange)="onItemChange($event)">
+       <ng-template let-data let-i="index" pTemplate="item">
+            <div style="margin-top: -16px;padding-left: 20px;">{{data.label}}</div>
+        </ng-template>
+    </p-multiSelect>
+</div>
